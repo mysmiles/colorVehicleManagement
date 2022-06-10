@@ -1,5 +1,6 @@
-var mysql = require('mysql');
-var pool = mysql.createPool({
+let mysql = require('mysql');
+
+let connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: '123456',
@@ -7,30 +8,32 @@ var pool = mysql.createPool({
   database: 'demo'
 });
 
-const HTTP = function (sql) {
-  return new Promise((success, error) => {
-    //从连接池里捞出一条空闲连接
-    pool.getConnection(function (err, connection) {
-      connection.query(sql, (err, result) => {
-        //释放连接回池
-        connection.release();
-        if (err) {
-          error({
-            code: 500,
-            errorMsg: err
-          })
-          console.log('连接失败', err.message);
-        }else{
-          success({
-            code: 200,
-            data: result
-          });
-        }
-      });
-    });
-  })
-}
+connection.connect(function(err) {
+  if (err) {
+    return console.error('error: ' + err.message);
+  }
 
-module.exports = {
-  HTTP: HTTP
-}
+  let createVehicles = `create table if not exists vehicle(
+                          id int primary key auto_increment,
+                          name varchar(255)not null
+                      )`;
+
+  connection.query(createVehicles, function(err, results, fields) {
+    if (err) {
+      console.log(err.message);
+    }
+  });
+
+  connection.end(function(err) {
+    if (err) {
+      return console.log(err.message);
+    }
+  });
+//更多请阅读：https://www.yiibai.com/mysql/nodejs-create-table.html
+
+
+
+  console.log('Connected to the MySQL server.');
+});
+//更多请阅读：https://www.yiibai.com/mysql/nodejs-connect.html
+
