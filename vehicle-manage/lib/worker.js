@@ -9,7 +9,8 @@ exports.insertData = ( value ) => {
 // 添加员工信息
 exports.insertWorkerData = ( value ) => {
   let _sql = "insert into worker set id=?,name=?,phone=?,sex=?;"
-  return query( _sql, value )
+  const valueArr = Object.values(value)
+  return query( _sql, valueArr )
 }
 
 // 更新员工信息

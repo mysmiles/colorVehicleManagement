@@ -19,9 +19,11 @@ const userModel = require('../lib/worker.js')
   })
 })*/
 
-router.get("/addWorker",(req,res,next) => {
+router.post("/addWorker",(req,res,next) => {
   let paramBody = req.query; // body传参
-  userModel.insertWorkerData(paramBody).then(res => {
-    res.status(200).send(res)
+  userModel.insertWorkerData(paramBody).then(resp => {
+    res.status(resp.code).send(resp)
   })
 })
+
+module.exports = router;
