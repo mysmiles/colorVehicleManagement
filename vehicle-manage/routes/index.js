@@ -7,3 +7,16 @@ router.get('/', function(req, res, next) {
 });
 
 module.exports = router;
+
+/*
+import statis from './statis'
+import member from './member'
+import shopping from './shopping'
+import promotion from './promotion'
+
+export default app => {
+  app.use('/member', member);
+  app.use('/statis', statis);
+  app.use('/shopping', shopping);
+  app.use('/promotion', promotion);
+}*/
