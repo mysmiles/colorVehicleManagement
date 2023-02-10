@@ -1,31 +1,14 @@
 const express = require('express');
 const router = express.Router();
-const workerModel = require('../lib/worker.js')
+const shopModel = require('../lib/shop.js')
 
 const { nanoid } = require('nanoid');
 
-// demo
-/*router.post('/', function(req, res, next) {
-  api.HTTP(sql).then(resp => {
-    res.status(item.code).send(resp)
-  })
-})*/
-
-/*router.get("/queryList",(req,res,next) => {
-  let params = req.params; // 路径传参
-  let paramBody = req.query; // body传参
-  res.json({
-    code: 0,
-    msg: "成功",
-    params
-  })
-})*/
-
 // 添加员工
-router.post("/addWorker",(req,res,next) => {
+router.post("/addShop",(req,res,next) => {
   const id = nanoid()
   let paramBody = { ...req.body, id: id }; // body传参
-  workerModel.insertWorkerData(paramBody).then(resp => {
+  shopModel.insertShopData(paramBody).then(resp => {
     res.status(resp.code).send({
       code: resp.code,
       msg: '保存成功'
@@ -43,7 +26,7 @@ router.put('/updateWorker/:workerId', (req, res) => {
   let workId = req.params.workerId
   let form = req.body
 
-  workerModel.updateWorkerData(workId, form).then(resp => {
+  shopModel.updateWorkerData(workId, form).then(resp => {
     res.status(resp.code).send({
       code: resp.code,
       msg: '保存成功'
@@ -59,7 +42,7 @@ router.put('/updateWorker/:workerId', (req, res) => {
 // 查询员工
 router.get('/worker/:workerId', (req, res) => {
   let workId = req.params.workerId
-  workerModel.selectWorkerData(workId).then(resp => {
+  shopModel.selectWorkerData(workId).then(resp => {
     let result = resp.data[0]
     res.status(resp.code).send({
       code: resp.code,
@@ -76,7 +59,7 @@ router.get('/worker/:workerId', (req, res) => {
 // 按照条件查询列表
 router.get('/workerList', (req, res) => {
   let query = req.query
-  workerModel.selectWorkerList(query).then(resp => {
+  shopModel.selectWorkerList(query).then(resp => {
     const data = resp[0].data
     const totalCount = resp[1].data[0].total
     res.status(200).send({
@@ -95,7 +78,7 @@ router.get('/workerList', (req, res) => {
 // 删除员工
 router.delete('/deleteWorker/:workerId', (req, res) => {
   let workId = req.params.workerId
-  workerModel.deleteWorkerData(workId).then(resp => {
+  shopModel.deleteWorkerData(workId).then(resp => {
     res.status(resp.code).send({
       code: resp.code,
       msg: '操作成功'
