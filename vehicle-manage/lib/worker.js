@@ -8,17 +8,17 @@ exports.insertData = ( value ) => {
 
 // 添加员工信息
 exports.insertWorkerData = ( value ) => {
-  const {id, name = null, phone = null, gender = null, is_delete = 0} = value
-  const valueArr = [id, name, phone, gender, is_delete]
-  let _sql = "insert into worker set id=?,name=?,phone=?,gender=?,is_delete=?;"
+  const {id, name = null, phone = null, gender = null, percentage = 0, is_delete = 0} = value
+  const valueArr = [id, name, phone, gender, percentage, is_delete]
+  let _sql = "insert into worker set id=?,name=?,phone=?,gender=?,percentage=?,is_delete=?;"
   return query( _sql, valueArr )
 }
 
 // 更新员工信息
 exports.updateWorkerData = (id, value) => {
-  const {name = null, phone = null, gender = null} = value
-  const valueArr = [name, phone, gender, id]
-  let _sql = "update worker set name=?,phone=?,gender=? where id=?;"
+  const {name = null, phone = null, gender = null, percentage = 0} = value
+  const valueArr = [name, phone, gender, percentage, id]
+  let _sql = "update worker set name=?,phone=?,gender=?,percentage=? where id=?;"
   return query( _sql, valueArr )
 }
 
@@ -43,7 +43,7 @@ exports.selectWorkerData = ( id ) => {
 // 查询员工列表
 exports.selectWorkerList = ( value ) => {
   let { pageSize = 10, pageNo = 0 } = value
-  const keys = ['name', 'phone', 'gender']
+  const keys = ['name', 'phone', 'gender', 'percentage']
   let condition = ''
   for (let key in value) {
     if (value[key] && keys.includes(key)) {
@@ -58,7 +58,6 @@ exports.selectWorkerList = ( value ) => {
 
   let _countSql = `select count(*) as total from worker where ${condition} is_delete=0`
   const count = query(_countSql)
-  console.log(data, count)
 
   return Promise.all([data, count])
 }
