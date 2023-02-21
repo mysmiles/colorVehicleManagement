@@ -3,6 +3,7 @@ const router = express.Router();
 const workerModel = require('../lib/worker.js')
 
 const { nanoid } = require('nanoid');
+const auth = require("../config/authorization");
 
 // demo
 /*router.post('/', function(req, res, next) {
@@ -21,11 +22,18 @@ const { nanoid } = require('nanoid');
   })
 })*/
 
+const getUserId = (req) => {
+  let authorization = req.get('authorization').split(" ")[1];
+  let userId = auth.decoded(authorization, false).userId
+  return userId
+}
+
 // 添加员工
 router.post("/addWorker",(req,res,next) => {
   const id = nanoid()
   let paramBody = { ...req.body, id: id }; // body传参
-  workerModel.insertWorkerData(paramBody).then(resp => {
+  let userId = getUserId(req)
+  workerModel.insertWorkerData(paramBody, userId).then(resp => {
     res.status(resp.code).send({
       code: resp.code,
       msg: '保存成功'

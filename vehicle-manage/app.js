@@ -5,10 +5,12 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const bodyParser = require('body-parser');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+
+// var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/user');
 var workerRouter = require('./routes/workers');
 var shopRouter = require('./routes/shops');
+const auth = require("./config/authorization");
 
 var app = express();
 
@@ -27,10 +29,11 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/worker', workerRouter);
-app.use('/shop', shopRouter);
+// app.use('/', indexRouter);
+app.use('/api/users', usersRouter);
+app.use("/api/*", auth.verifyToken);
+app.use('/api/worker', workerRouter);
+app.use('/api/shop', shopRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -38,7 +41,7 @@ app.use(function(req, res, next) {
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function(req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};

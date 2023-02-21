@@ -7,10 +7,10 @@ exports.insertData = ( value ) => {
 }*/
 
 // 添加员工信息
-exports.insertWorkerData = ( value ) => {
+exports.insertWorkerData = ( value, userId ) => {
   const {id, name = null, phone = null, gender = null, percentage = 0, is_delete = 0} = value
-  const valueArr = [id, name, phone, gender, percentage, is_delete]
-  let _sql = "insert into worker set id=?,name=?,phone=?,gender=?,percentage=?,is_delete=?;"
+  const valueArr = [id, name, phone, gender, percentage, is_delete, userId]
+  let _sql = "insert into worker set id=?,name=?,phone=?,gender=?,percentage=?,is_delete=?,userId=?;"
   return query( _sql, valueArr )
 }
 
