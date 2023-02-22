@@ -3,12 +3,14 @@ const router = express.Router();
 const shopModel = require('../lib/shop.js')
 
 const { nanoid } = require('nanoid');
+const { getUserId } = require("../config/authorization");
 
 // 添加店铺
 router.post("/addShop",(req,res,next) => {
   const id = nanoid()
+  let userId = getUserId(req)
   let paramBody = { ...req.body, id: id }; // body传参
-  shopModel.insertShopData(paramBody).then(resp => {
+  shopModel.insertShopData(paramBody, userId).then(resp => {
     res.status(resp.code).send({
       code: resp.code,
       msg: '保存成功'
@@ -59,7 +61,8 @@ router.get('/shop/:shopId', (req, res) => {
 // 按照条件查询列表
 router.get('/shopList', (req, res) => {
   let query = req.query
-  shopModel.selectShopList(query).then(resp => {
+  let userId = getUserId(req)
+  shopModel.selectShopList(query, userId).then(resp => {
     const data = resp[0].data
     const totalCount = resp[1].data[0].total
     res.status(200).send({

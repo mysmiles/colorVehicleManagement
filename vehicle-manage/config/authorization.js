@@ -30,10 +30,14 @@ module.exports.verifyToken = (req, res, next) => {
   });
 };
 
-
-// 解码token
-module.exports.decoded = (token, complete = true) => {
+const decoded =  (token, complete = true) => {
   return jwt.decode(token, {
     complete,
   });
 };
+
+module.exports.getUserId = (req) => {
+  let authorization = req.get('authorization').split(" ")[1];
+  let userId = decoded(authorization, false).userId
+  return userId
+}

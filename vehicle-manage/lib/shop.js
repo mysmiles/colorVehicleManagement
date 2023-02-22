@@ -1,10 +1,10 @@
 let query = require('../utils/mysql').HTTP
 
 // 添加店铺信息
-exports.insertShopData = ( value ) => {
+exports.insertShopData = ( value, userId ) => {
   const {id, name = null, address = null, longitude = null, latitude = null, manager = null, phone = null, is_delete = 0} = value
-  const valueArr = [id, name, address, longitude, latitude, manager, phone, is_delete]
-  let _sql = "insert into shop set id=?,name=?,address=?,longitude=?,latitude=?,manager=?,phone=?,is_delete=?;"
+  const valueArr = [id, name, address, longitude, latitude, manager, phone, is_delete, userId]
+  let _sql = "insert into shop set id=?,name=?,address=?,longitude=?,latitude=?,manager=?,phone=?,is_delete=?,userId=?;"
   return query( _sql, valueArr )
 }
 
@@ -35,10 +35,10 @@ exports.selectShopData = ( id ) => {
 }
 
 // 查询店铺列表
-exports.selectShopList = ( value ) => {
+exports.selectShopList = ( value, userId ) => {
   let { pageSize = 10, pageNo = 0 } = value
   const keys = ['name', 'address', 'longitude', 'latitude', 'manager', 'phone']
-  let condition = ''
+  let condition = `userId="${userId}" and `
   for (let key in value) {
     if (value[key] && keys.includes(key)) {
       condition += `${key}="${value[key]}" and `
