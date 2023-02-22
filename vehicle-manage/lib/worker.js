@@ -41,10 +41,10 @@ exports.selectWorkerData = ( id ) => {
 }
 
 // 查询员工列表
-exports.selectWorkerList = ( value ) => {
+exports.selectWorkerList = ( value , userId ) => {
   let { pageSize = 10, pageNo = 0 } = value
   const keys = ['name', 'phone', 'gender', 'percentage']
-  let condition = ''
+  let condition = `userId="${userId}" and `
   for (let key in value) {
     if (value[key] && keys.includes(key)) {
       condition += `${key}="${value[key]}" and `

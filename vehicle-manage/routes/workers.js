@@ -84,7 +84,8 @@ router.get('/worker/:workerId', (req, res) => {
 // 按照条件查询列表
 router.get('/workerList', (req, res) => {
   let query = req.query
-  workerModel.selectWorkerList(query).then(resp => {
+  let userId = getUserId(req)
+  workerModel.selectWorkerList(query, userId).then(resp => {
     const data = resp[0].data
     const totalCount = resp[1].data[0].total
     res.status(200).send({
