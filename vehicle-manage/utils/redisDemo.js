@@ -49,10 +49,11 @@ redisClient.quit() */
 class DateTool {
   // 构造函数
   constructor(...args) {
-    console.log('args', args);
+    // console.log('args', args);
+    this.time = '111'
   }
 
-  // 实例方法
+  /* // 实例方法
   getWeek() {
     return new Date().getDay()
     // console.log('getWeek')
@@ -64,7 +65,7 @@ class DateTool {
 
   getWD() {
     return `周${this.getWeek()} ${this.getDay()}号`
-  }
+  } */
 
   // 静态方法 属性 单例模式
   static defaultInstance() {
@@ -80,7 +81,8 @@ class DateTool {
 /* let dateTool = new DateTool(1,2,4);
 console.log(dateTool.getWeek()); */
 
-console.log(DateTool.defaultInstance().getWD());
+// console.log(DateTool.defaultInstance().getWD());
+console.log(DateTool.defaultInstance().time);
 
 /**
  * 继承
