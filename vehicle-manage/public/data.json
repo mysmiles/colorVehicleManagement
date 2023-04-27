@@ -1,0 +1,760 @@
+[
+	{
+		"villageName": "东白城村",
+		"children": [
+			{
+				"BasicGridName": "东白城4队",
+				"BasicGridManager": "刘同来",
+				"BasicGridAdmin": [
+					"刘占国",
+					"刘莹"
+				],
+				"count": 100
+			},
+			{
+				"BasicGridName": "东白城1队",
+				"BasicGridManager": "岳向福",
+				"BasicGridAdmin": [
+					"岳会涛",
+					"岳占文"
+				],
+				"count": 100
+			},
+			{
+				"BasicGridName": "东白城3队",
+				"BasicGridManager": "杨瑞霄",
+				"BasicGridAdmin": [
+					"刘宗库",
+					"朱雪娟"
+				],
+				"count": 100
+			},
+			{
+				"BasicGridName": "东白城7、8队",
+				"BasicGridManager": "朱太红",
+				"BasicGridAdmin": [
+					"岳志彬",
+					"朱会亮"
+				],
+				"count": 100
+			},
+			{
+				"BasicGridName": "东白城2队",
+				"BasicGridManager": "朱红卿",
+				"BasicGridAdmin": [
+					"朱志敏",
+					"朱明会"
+				],
+				"count": 100
+			},
+			{
+				"BasicGridName": "东白城5队",
+				"BasicGridManager": "朱永伟",
+				"BasicGridAdmin": [
+					"陈志芬"
+				],
+				"count": 50
+			},
+			{
+				"BasicGridName": "东白城6队",
+				"BasicGridManager": "董宝林",
+				"BasicGridAdmin": [
+					"白坤茹",
+					"武小静",
+					"岳志刚"
+				],
+				"count": 139
+			}
+		]
+	},
+	{
+		"villageName": "闫庄村",
+		"children": [
+			{
+				"BasicGridName": "村主街以西",
+				"BasicGridManager": "闫立涛",
+				"BasicGridAdmin": [
+					"闫光辉"
+				],
+				"count": 39
+			},
+			{
+				"BasicGridName": "村主街以东",
+				"BasicGridManager": "闫进红",
+				"BasicGridAdmin": [
+					"闫志宽"
+				],
+				"count": 34
+			}
+		]
+	},
+	{
+		"villageName": "西黑堡村",
+		"children": [
+			{
+				"BasicGridName": "村主街东北",
+				"BasicGridManager": "贾兰辉",
+				"BasicGridAdmin": [
+					"王飞",
+					"王玉娟"
+				],
+				"count": 33
+			},
+			{
+				"BasicGridName": "村主街西南",
+				"BasicGridManager": "贾婧卿",
+				"BasicGridAdmin": [
+					"杜凤娟",
+					"张会芹"
+				],
+				"count": 56
+			},
+			{
+				"BasicGridName": "村主街西北",
+				"BasicGridManager": "霍保锁",
+				"BasicGridAdmin": [
+					"杨志乾",
+					"王丽静"
+				],
+				"count": 47
+			},
+			{
+				"BasicGridName": "村主街东南",
+				"BasicGridManager": "贾同英",
+				"BasicGridAdmin": [
+					"刘顺庭",
+					"贾春红"
+				],
+				"count": 42
+			}
+		]
+	},
+	{
+		"villageName": "西白城村",
+		"children": [
+			{
+				"BasicGridName": "1区，2区，3区，4区",
+				"BasicGridManager": "窦海超",
+				"BasicGridAdmin": [
+					"张志敏",
+					"窦建宏",
+					"窦海超",
+					"沈增志"
+				],
+				"count": 196
+			},
+			{
+				"BasicGridName": "5区，6区，7区，8区，9区",
+				"BasicGridManager": "张文彬",
+				"BasicGridAdmin": [
+					"张玉龙",
+					"窦伟杰",
+					"张云峰",
+					"张文彬",
+					"薛永红"
+				],
+				"count": 245
+			},
+			{
+				"BasicGridName": "10区，11区，12区，13区，14区",
+				"BasicGridManager": "张力军",
+				"BasicGridAdmin": [
+					"张力军",
+					"王宝龙",
+					"张顺在",
+					"张兰杰",
+					"刘立会"
+				],
+				"count": 250
+			},
+			{
+				"BasicGridName": "15区，16区，17区",
+				"BasicGridManager": "郭小蒙",
+				"BasicGridAdmin": [
+					"郭小蒙",
+					"杨朋龙",
+					"张会超"
+				],
+				"count": 149
+			},
+			{
+				"BasicGridName": "18区，19区，20区，21区，22区，23区",
+				"BasicGridManager": "张照然",
+				"BasicGridAdmin": [
+					"张照然",
+					"刘增申",
+					"张兰英",
+					"张慈",
+					"刘阳",
+					"刘金刚"
+				],
+				"count": 300
+			}
+		]
+	},
+	{
+		"villageName": "唐会村",
+		"children": [
+			{
+				"BasicGridName": "1片，2片，3片，4片，5片",
+				"BasicGridManager": "张玉开",
+				"BasicGridAdmin": [
+					"薛会丰",
+					"薛立强",
+					"薛振才",
+					"张玉开",
+					"刘红芹"
+				],
+				"count": 244
+			},
+			{
+				"BasicGridName": "6片，7片，8片",
+				"BasicGridManager": "刘红芹",
+				"BasicGridAdmin": [
+					"任军彦",
+					"张淑娟",
+					"张永"
+				],
+				"count": 133
+			}
+		]
+	},
+	{
+		"villageName": "东阳邱村",
+		"children": [
+			{
+				"BasicGridName": "东南区，中东区",
+				"BasicGridManager": "王兵库",
+				"BasicGridAdmin": [
+					"李平",
+					"许永亮"
+				],
+				"count": 99
+			},
+			{
+				"BasicGridName": "新民居，西北区",
+				"BasicGridManager": "王巧茹",
+				"BasicGridAdmin": [
+					"王淑锋",
+					"许红轻"
+				],
+				"count": 93
+			},
+			{
+				"BasicGridName": "东北1区，东北2区",
+				"BasicGridManager": "许晓冲",
+				"BasicGridAdmin": [
+					"薛坤茹",
+					"李振庄"
+				],
+				"count": 100
+			},
+			{
+				"BasicGridName": "中西1区，中西2区，中西3区",
+				"BasicGridManager": "左龙保",
+				"BasicGridAdmin": [
+					"王电格",
+					"王二平",
+					"齐雷"
+				],
+				"count": 133
+			},
+			{
+				"BasicGridName": "西南1区，西南2区",
+				"BasicGridManager": "许献杰",
+				"BasicGridAdmin": [
+					"王敬",
+					"吴晓光"
+				],
+				"count": 90
+			}
+		]
+	},
+	{
+		"villageName": "南康庄村",
+		"children": [
+			{
+				"BasicGridName": "1队",
+				"BasicGridManager": "王红旗",
+				"BasicGridAdmin": [
+					"王红旗"
+				],
+				"count": 41
+			},
+			{
+				"BasicGridName": "2队",
+				"BasicGridManager": "王林杰",
+				"BasicGridAdmin": [
+					"王林杰"
+				],
+				"count": 34
+			},
+			{
+				"BasicGridName": "3队，4队",
+				"BasicGridManager": "周林伟",
+				"BasicGridAdmin": [
+					"周林伟",
+					"魏莎莎"
+				],
+				"count": 90
+			},
+			{
+				"BasicGridName": "5队，6队",
+				"BasicGridManager": "沈密雷",
+				"BasicGridAdmin": [
+					"沈密雷",
+					"徐焕玲"
+				],
+				"count": 85
+			}
+		]
+	},
+	{
+		"villageName": "宰庄村",
+		"children": [
+			{
+				"BasicGridName": "一区",
+				"BasicGridManager": "马江焕",
+				"BasicGridAdmin": [
+					"贾文宾",
+					"贾伟婷"
+				],
+				"count": 78
+			},
+			{
+				"BasicGridName": "二区",
+				"BasicGridManager": "徐伟良",
+				"BasicGridAdmin": [
+					"刘建华",
+					"徐增保"
+				],
+				"count": 78
+			},
+			{
+				"BasicGridName": "三区",
+				"BasicGridManager": "贾英杰",
+				"BasicGridAdmin": [
+					"李士芳",
+					"孙会然"
+				],
+				"count": 69
+			},
+			{
+				"BasicGridName": "四区",
+				"BasicGridManager": "王登星",
+				"BasicGridAdmin": [
+					"候建茹",
+					"张伟明"
+				],
+				"count": 79
+			},
+			{
+				"BasicGridName": "五区",
+				"BasicGridManager": "王双进",
+				"BasicGridAdmin": [
+					"王士强",
+					"张弘阳"
+				],
+				"count": 76
+			},
+			{
+				"BasicGridName": "六区",
+				"BasicGridManager": "徐长红",
+				"BasicGridAdmin": [
+					"徐登准",
+					"王增良"
+				],
+				"count": 76
+			}
+		]
+	},
+	{
+		"villageName": "安庄村",
+		"children": [
+			{
+				"BasicGridName": "1、4队",
+				"BasicGridManager": "张金红",
+				"BasicGridAdmin": [
+					"高永军",
+					"张同军",
+					"张立保"
+				],
+				"count": 86
+			},
+			{
+				"BasicGridName": "2、5队",
+				"BasicGridManager": "万明华",
+				"BasicGridAdmin": [
+					"张曙光",
+					"王洪亮",
+					"马健主"
+				],
+				"count": 72
+			},
+			{
+				"BasicGridName": "2、6队",
+				"BasicGridManager": "张立晔",
+				"BasicGridAdmin": [
+					"高玉凯",
+					"裴超",
+					"李伟明"
+				],
+				"count": 86
+			},
+			{
+				"BasicGridName": "1、3队",
+				"BasicGridManager": "李华",
+				"BasicGridAdmin": [
+					"高龙",
+					"李盼",
+					"李志忠",
+					"张晓伟"
+				],
+				"count": 109
+			}
+		]
+	},
+	{
+		"villageName": "东安里村",
+		"children": [
+			{
+				"BasicGridName": "东北区",
+				"BasicGridManager": "贾红涛",
+				"BasicGridAdmin": [
+					"贾红涛"
+				],
+				"count": 49
+			},
+			{
+				"BasicGridName": "西北区",
+				"BasicGridManager": "贾永立",
+				"BasicGridAdmin": [
+					"贾永立"
+				],
+				"count": 18
+			},
+			{
+				"BasicGridName": "东南区",
+				"BasicGridManager": "薛力娜",
+				"BasicGridAdmin": [
+					"薛力娜"
+				],
+				"count": 34
+			},
+			{
+				"BasicGridName": "西南区",
+				"BasicGridManager": "贾军伟",
+				"BasicGridAdmin": [
+					"贾军伟"
+				],
+				"count": 27
+			}
+		]
+	},
+	{
+		"villageName": "东黑堡村",
+		"children": [
+			{
+				"BasicGridName": "1队，2队，3队",
+				"BasicGridManager": "王海路",
+				"BasicGridAdmin": [
+					"王新水",
+					"王志贤",
+					"吴霞"
+				],
+				"count": 135
+			},
+			{
+				"BasicGridName": "4队，5队，6队",
+				"BasicGridManager": "王永辉",
+				"BasicGridAdmin": [
+					"刘敬鸽",
+					"王苗",
+					"马进茹"
+				],
+				"count": 135
+			},
+			{
+				"BasicGridName": "7队，8队，9队",
+				"BasicGridManager": "曹帅华",
+				"BasicGridAdmin": [
+					"刘志杰",
+					"陈娟",
+					"龚月梅"
+				],
+				"count": 139
+			},
+			{
+				"BasicGridName": "10队，11队，12队",
+				"BasicGridManager": "武敏",
+				"BasicGridAdmin": [
+					"曹志敬",
+					"武森",
+					"陈会霞"
+				],
+				"count": 132
+			},
+			{
+				"BasicGridName": "13队，14队，15队",
+				"BasicGridManager": "刘波",
+				"BasicGridAdmin": [
+					"王兰江",
+					"王田坤",
+					"李华"
+				],
+				"count": 139
+			},
+			{
+				"BasicGridName": "16队，17队，18队",
+				"BasicGridManager": "李永辉",
+				"BasicGridAdmin": [
+					"甄红敏",
+					"武志会",
+					"刘保建"
+				],
+				"count": 130
+			}
+		]
+	},
+	{
+		"villageName": "崔庄村",
+		"children": [
+			{
+				"BasicGridName": "王贵栓大街以南",
+				"BasicGridManager": "王记红",
+				"BasicGridAdmin": [
+					"李志永",
+					"王辉"
+				],
+				"count": 80
+			},
+			{
+				"BasicGridName": "大队到王贵栓超市",
+				"BasicGridManager": "刘淑琴",
+				"BasicGridAdmin": [
+					"王增强",
+					"朱同楼"
+				],
+				"count": 87
+			},
+			{
+				"BasicGridName": "东西大街以南到大队",
+				"BasicGridManager": "郭克军",
+				"BasicGridAdmin": [
+					"王森",
+					"王振辉"
+				],
+				"count": 95
+			},
+			{
+				"BasicGridName": "东西大街到郭爱庆门前",
+				"BasicGridManager": "郭罗扣",
+				"BasicGridAdmin": [
+					"郭永朝",
+					"郭玉刚",
+					"郭增辉"
+				],
+				"count": 107
+			},
+			{
+				"BasicGridName": "郭爱庆家到村北",
+				"BasicGridManager": "郭永生",
+				"BasicGridAdmin": [
+					"郭文学",
+					"郭文周"
+				],
+				"count": 69
+			}
+		]
+	},
+	{
+		"villageName": "黄庄村",
+		"children": [
+			{
+				"BasicGridName": "1区，2区，3区",
+				"BasicGridManager": "何红娟",
+				"BasicGridAdmin": [
+					"何红娟",
+					"陈自任",
+					"陈二军"
+				],
+				"count": 150
+			},
+			{
+				"BasicGridName": "4区，5区，6区",
+				"BasicGridManager": "陈凯",
+				"BasicGridAdmin": [
+					"陈凯",
+					"陈明然",
+					"贺芹"
+				],
+				"count": 150
+			},
+			{
+				"BasicGridName": "7区，8区",
+				"BasicGridManager": "陈金辉",
+				"BasicGridAdmin": [
+					"陈金辉",
+					"刘伟"
+				],
+				"count": 99
+			}
+		]
+	},
+	{
+		"villageName": "李家庄村",
+		"children": [
+			{
+				"BasicGridName": "村主街东北",
+				"BasicGridManager": "李红栓",
+				"BasicGridAdmin": [
+					"李红栓"
+				],
+				"count": 32
+			},
+			{
+				"BasicGridName": "村主街西南",
+				"BasicGridManager": "李玉良",
+				"BasicGridAdmin": [
+					"李玉良"
+				],
+				"count": 32
+			},
+			{
+				"BasicGridName": "村主街西北",
+				"BasicGridManager": "李红",
+				"BasicGridAdmin": [
+					"李红"
+				],
+				"count": 40
+			},
+			{
+				"BasicGridName": "村主街东南",
+				"BasicGridManager": "李辉",
+				"BasicGridAdmin": [
+					"李辉"
+				],
+				"count": 26
+			}
+		]
+	},
+	{
+		"villageName": "固现村",
+		"children": [
+			{
+				"BasicGridName": "1组",
+				"BasicGridManager": "丁亚娟",
+				"BasicGridAdmin": [
+					"贾俊现",
+					"杨静",
+					"张胜儒",
+					"丁亚敏"
+				],
+				"count": 117
+			},
+			{
+				"BasicGridName": "2组",
+				"BasicGridManager": "段孟申",
+				"BasicGridAdmin": [
+					"张鹏",
+					"李朋",
+					"张建永",
+					"张海江"
+				],
+				"count": 116
+			},
+			{
+				"BasicGridName": "3组",
+				"BasicGridManager": "丁进修",
+				"BasicGridAdmin": [
+					"张立杰",
+					"丁善修",
+					"尤占文",
+					"贾贺星"
+				],
+				"count": 115
+			},
+			{
+				"BasicGridName": "4组",
+				"BasicGridManager": "贾卫涛",
+				"BasicGridAdmin": [
+					"贾爱军",
+					"贾爱平",
+					"贾满乔",
+					"刘伟彦"
+				],
+				"count": 115
+			},
+			{
+				"BasicGridName": "5组",
+				"BasicGridManager": "贾兵哲",
+				"BasicGridAdmin": [
+					"许成良",
+					"许永坡",
+					"许振坡",
+					"渠保锋"
+				],
+				"count": 115
+			}
+		]
+	},
+	{
+		"villageName": "西阳邱村",
+		"children": [
+			{
+				"BasicGridName": "1队，2队",
+				"BasicGridManager": "徐会军",
+				"BasicGridAdmin": [
+					"徐会军",
+					"徐龙"
+				],
+				"count": 100
+			},
+			{
+				"BasicGridName": "3队，4队",
+				"BasicGridManager": "李永良",
+				"BasicGridAdmin": [
+					"徐长江",
+					"李永良"
+				],
+				"count": 95
+			},
+			{
+				"BasicGridName": "5队，6队",
+				"BasicGridManager": "徐强",
+				"BasicGridAdmin": [
+					"徐强",
+					"葛旺水"
+				],
+				"count": 98
+			},
+			{
+				"BasicGridName": "7队，8队",
+				"BasicGridManager": "徐满乐",
+				"BasicGridAdmin": [
+					"徐满乐",
+					"唐亮"
+				],
+				"count": 97
+			},
+			{
+				"BasicGridName": "9队，10队",
+				"BasicGridManager": "刘五旗",
+				"BasicGridAdmin": [
+					"王瑞匣",
+					"徐英琴"
+				],
+				"count": 100
+			},
+			{
+				"BasicGridName": "11队，12队",
+				"BasicGridManager": "徐术丛",
+				"BasicGridAdmin": [
+					"徐扣欣",
+					"徐术森"
+				],
+				"count": 100
+			}
+		]
+	}
+]
