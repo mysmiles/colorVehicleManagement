@@ -25,6 +25,11 @@ class Redis {
     return await redisClient.del(key)
   }
 
+  connectRedis = async () => {
+    await redisClient.connect();
+    this.flag = true
+  }
+
   static defaultInstance() {
 
     if (!Redis.instance) {
@@ -35,4 +40,5 @@ class Redis {
   }
 }
 
+module.exports = Redis
 

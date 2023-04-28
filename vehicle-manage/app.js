@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const bodyParser = require('body-parser');
+let redisClass = require('./utils/redis');
 
 
 // var indexRouter = require('./routes/index');
@@ -50,5 +51,7 @@ app.use(function(req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+redisClass.defaultInstance().connectRedis()
 
 module.exports = app;
