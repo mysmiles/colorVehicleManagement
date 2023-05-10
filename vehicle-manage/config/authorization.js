@@ -1,4 +1,5 @@
 const jwt = require("jsonwebtoken");
+const redisClass = require("../utils/redis");
 
 const secretKey = "secretKey";
 
@@ -19,8 +20,15 @@ module.exports.verifyToken = (req, res, next) => {
     })
   }
   const token = req.headers.authorization.split(" ")[1];
-  jwt.verify(token, secretKey, (err, decoded) => {
+  jwt.verify(token, secretKey, async (err, decoded) => {
     if (err) {
+      return res.status(401).send({
+        code: '401',
+        msg: 'token无效'
+      })
+    }
+    const userId = decoded.userId
+    if (!await redisClass.defaultInstance().getValue(String(userId))) {
       return res.status(401).send({
         code: '401',
         msg: 'token无效'

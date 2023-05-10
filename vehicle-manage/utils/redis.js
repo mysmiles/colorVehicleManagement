@@ -9,9 +9,13 @@ class Redis {
   constructor() {
     this.flag = false
   }
-  setValue = async (key, value, expire) => {
+  setValue = async (key, value, expire = 60 * 60 * 24 ) => {
     if (this.flag) {
-      await redisClient.set(key, value, { EX: expire })
+      try {
+        await redisClient.set(key, value, { EX: expire })
+      } catch (e) {
+        throw new Error('操作失败')
+      }
     } else {
       throw new Error('redis未链接成功')
     }
